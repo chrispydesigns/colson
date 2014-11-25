@@ -1,0 +1,61 @@
+<div role="navigation" class="navbar navbar-default navbar-fixed-top space-top">
+  <!-- start: TOP NAVIGATION CONTAINER -->
+  <div class="container">
+    <div class="navbar-header">
+      <!-- start: RESPONSIVE MENU TOGGLER -->
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+	<span class="sr-only">Toggle navigation</span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+      </button>
+      <!-- end: RESPONSIVE MENU TOGGLER -->
+      <!-- start: LOGO -->
+      <a href="#" data-placement="bottom" data-toggle="popover">
+        <%= image_tag 'static/logo-header.png', size: '119x71', border: '0' %>
+      </a>
+      <!-- end: LOGO -->
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+	<li class="active"><a href="/">Welcome</a></li>
+	<li><a href="/how_it_works">How it Works</a></li>
+	<li><a href="/coverage_and_pricing">Coverage and Pricing</a></li>
+	<li><a href="/create_a_flyer">Create a Flyer</a></li>
+	<li><a href="/about_us">About Us</a></li>
+	<li><a href="/faq">FAQ</a></li>
+	<li><a href="/contact_us">Contact Us</a></li>
+        <li>
+	  <%= render partial: 'shared/login' %>
+	</li>
+	<li class="menu-search">
+	  <!-- start: SEARCH BUTTON -->
+	  <a href="#" data-placement="bottom" data-toggle="popover">
+	    <i class="clip-search-3"></i>
+	  </a>
+	  <!-- end: SEARCH BUTTON -->
+	  <!-- start: SEARCH POPOVER -->
+	  <div class="popover bottom search-box">
+	    <div class="arrow"></div>
+	    <div class="popover-content">
+	      <!-- start: SEARCH FORM -->
+	      <form class="" id="searchform" action="#">
+		<div class="input-group">
+		  <input type="text" class="form-control" placeholder="Search">
+		  <span class="input-group-btn">
+		    <button class="btn btn-main-color btn-squared" type="button">
+		      <i class="clip-search-3"></i>
+		  </button> </span>
+		</div>
+	      </form>
+	      <!-- end: SEARCH FORM -->
+	    </div>
+	  </div>
+	  <!-- end: SEARCH POPOVER -->
+	</li>
+      </ul>
+    </div>
+  </div>
+  <!-- end: TOP NAVIGATION CONTAINER -->
+</div>
+

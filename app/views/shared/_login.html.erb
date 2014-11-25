@@ -1,0 +1,6 @@
+<% if user_signed_in? %>
+   <%= link_to 'Dispatcher', dispatcher_start_path, :class => 'navbar-link'  %>
+<% else %>
+   <%= link_to 'Get Started', dispatcher_start_path, class: 'btn bnt-tiny btn-start' %>
+<% end %>
+
